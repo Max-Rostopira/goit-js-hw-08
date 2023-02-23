@@ -46,7 +46,7 @@ let onFormSubmit = (event) => {
 };
 
 
-formEl.addEventListener('input', throttle(fillFormFields, 500));
+formEl.addEventListener('input', throttle(onFormChange, 500));
 formEl.addEventListener('submit', onFormSubmit);
 formEl.addEventListener('change', onFormChange);
 fillFormFields(formEl);
